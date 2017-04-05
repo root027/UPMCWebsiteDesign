@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   <link rel="icon" href="./images/favicon.ico">
+
+
+    <title>Cart</title>
+    
+     
+
+     <link rel="stylesheet" href="./css/bootstrap.min.css">
+     <link rel="stylesheet" href="./css/index_style.css">
+     <link rel="stylesheet" href="./css/cart_style.css">
+     <link rel="stylesheet" href="./css/font-awesome.min.css">
+     <link href="./css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+     <!--link rel="stylesheet" href="./css/styles.css"-->
+     <link rel="stylesheet" href="./css/mvp.css">
+
+</head>
+<body>
+
+<header>
+        <div class="top_bar">
+        <div class="container">
+          <form class="navbar-form navbar-left" role="search">
+             <input type="text" class="form-control" placeholder="Search by keyword" list="AList" spellcheck="true">
+				<datalist id='AList' hide=true>
+       <option label='Aspirin' value='Aspirin'>
+       <option label='Accutane' value='Accutane'>
+	   <option label='Combiflam' value='Combiflam'>
+	   <option label='Paracetamol' value='Paracetamol'>
+       <option label='paracetamol' value='paracetamol'>
+     
+    </datalist>
+             <button type="submit" class="btn btn-default"><font face="verdana"><a href= "getAspirin.html"> Search </a></font></button>
+                </form>
+
+             
+                <ul class="rightc">
+                    <li><!--i class="fa fa-envelope-o"></i--> <a href="under-con.html"><font face="verdana">help@myupmc.com</font></a></li>
+                    <li><!--i class="fa fa-user"></i--><font face="verdana">Contact UPMC: 412-647-(8762)</font> </li>      
+                </ul>
+
+            
+        </div>
+    
+    <!--Nav bar -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                
+              <a href=index.html><img class="logo" src="./images/upmcpic.png" alt=""></a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <!--font face="Gravity-UltraLight", font size="6">Online Pharmacy</font-->
+    
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                     <li><a href="index.html">Sign out</a></li>
+                     <li> <a style="font-style: italic">Welcome, John Doe </a></li>
+                     <li><a href="cart1.html">Shopping Cart</a></li>
+                     <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><!--i class="fa fa-fw fa-bell-o"></i--><font size="3">Resources</font><span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="under-con.html"><!--i class="fa fa-fw fa-tag"></i-->UPMC Hospitals</a></li>
+                        <li class="divider"></li>
+                        <li><a href="under-con.html"><!--i class="fa fa-fw fa-tag"></i-->Pay My Bill</a></li>
+                        <li class="divider"></li>
+                        <li><a href="under-con.html"><!--i class="fa fa-fw fa-thumbs-o-up"></i-->Request an Appointment</a></li>
+                        
+                    </ul>
+                </li>
+                    
+                </ul>
+
+
+
+            </div>
+             </nav>
+
+    </header>
+    <br>
+
+<!--div class="checkout-header"-->
+  
+  
+  <section id="cart_id">
+    <div class="container">
+    <span class="shopping-text large"> <h3> My Shopping Cart is Empty. <br></br> Continue Shopping to add items to the cart. <br> </br> </h3></span>
+     
+      <!--div class="responsive cart_table">
+      
+        <table class="table table-condensed">
+          <thead>
+            <tr class="cart_header">
+              <td class="item">Item</td>
+              <td class="description">Description</td>
+              <td class="quantity"> Quantity</td>
+              <td class="total">Total Price</td>
+              <td class="remove">Remove</td>
+            </tr>
+          </thead>
+  
+  <tbody>
+            <tr class="cart_body">
+              <td class="cart_product">
+                <a href=""><img src="./images/aspirin.jpg" alt=""></a>
+               
+              </td>
+              <td class="cart_description">
+                <h4><a href="">Aspirin</a></h4>
+                <p>Pain Reliever, 325mg, 100 Tablets</p>
+              </td>
+              <td class="cart_quantity">
+                <div class="cart_quantity_button">
+                  <a class="cart_quantity_up" href=""><span class="glyphicon glyphicon-plus"></span></a>
+                  <input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+                  <a class="cart_quantity_down" href=""><span class="glyphicon glyphicon-minus"></span></a>
+                </div>
+              </td>
+              <td class="cart_total">
+                <p class="cart_total_price">$30</p>
+              </td>
+             
+             <td class="cart_delete">
+								<button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-remove-sign"></span> <a class="cart_quantity_remove" href="">Remove
+        </a></button>
+							</td>
+             
+            </tr>
+
+            <!--tr>
+              <td class="cart_product">
+                <a href=""></a><img src="./images/advi.jpg" alt="">
+              </td>
+              <td class="cart_description">
+                <h4><a href="">Advil</a></h4>
+                <p>Solubilized Ibuprofen, 200mg, 40 capsules</p>
+              </td>
+              <td class="cart_quantity">
+                <div class="cart_quantity_button">
+                  <a class="cart_quantity_up" href=""> <span class="glyphicon glyphicon-plus"></span></a>
+                  <input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+                  <a class="cart_quantity_down" href=""><span class="glyphicon glyphicon-minus"></span></a>
+                </div>
+              </td>
+              <td class="cart_total">
+                <p class="cart_total_price">$36</p>
+              </td>
+              <td class="cart_delete">
+								 <button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-remove-sign"></span> <a class="cart_quantity_remove" href="">Remove
+        </a></button>
+							</td>
+          
+          </tr-->
+          
+          <!--/tbody>
+        </table>
+      </div-->
+      
+      <button type="button" class="btn btn-large" style="background:#803184">
+      <a href="category.html" class="btn btn-large" style="color: #FFF">  <i class="glyphicon glyphicon-arrow-left" aria-hidden="true"></i>   Continue Shopping </a></button>
+      
+	<!--button type="button" class="btn btn-large pull-right" style="background:#803184">
+    <a href="checkout1.html" class="btn btn-large pull-right" style="color: #FFF">  Checkout  <i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i></a>
+   </button-->
+   
+    </div>
+  
+  </section> <!--/#cart_items-->
+   <br>
+   <br>
+   <footer id="footer"><!--Footer-->
+    <div class="footer-top">
+<div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="companyinfo">
+              <h1><span><a href = "under-con.html"> DEALS </a></span></h1>
+              <p> Deals for you!</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="col-sm-3">
+              <div class="video-gallery text-center">
+                <a href="under-con.html">
+                  <div class="iframe-img">
+                    <img src="./images/flu-shot.png" alt="" />
+                  </div>
+                  <!--div class="overlay-icon">
+                    <i class="fa fa-play-circle-o"></i>
+                  </div-->
+                </a>
+                <p>30% off on your flu-shot.</p>
+                <p>Walk-in to your nearest UPMC hospital.</p>
+                <p><b><u><a href="under-con.html"><font color="808080">Learn More.</font></a></u></b></p>
+              </div>
+            </div>
+            
+            <div class="col-sm-3">
+              <div class="video-gallery text-center">
+                <a href="under-con.html">
+                  <div class="iframe-img">
+                    <img src="images/deal-coupon.png" alt="" />
+                  </div>
+                  <!--div class="overlay-icon">
+                    <i class="fa fa-play-circle-o"></i>
+                  </div-->
+                </a>
+                <p>Deals and Coupons.</p>
+                <p><b><u><a href="under-con.html"><font color="808080">Learn More.</font></a></u></b></p>
+              </div>
+            </div>
+            
+            <div class="col-sm-3">
+              <div class="video-gallery text-center">
+                <a href="under-con.html">
+                  <div class="iframe-img">
+                    <img src="images/card.png" alt="" />
+                  </div>
+                  <!--div class="overlay-icon">
+                    <i class="fa fa-play-circle-o"></i>
+                  </div-->
+                </a>
+                <p>Offer on card purchase.</p>
+                <p><b><u><a href="under-con.html"><font color="808080">Learn More.</font></a></u></b></p>
+              </div>
+            </div>
+            
+            <div class="col-sm-3">
+              <div class="video-gallery text-center">
+                <a href="under-con.html">
+                  <div class="iframe-img">
+                    <img src="images/medicare.png" alt="" />
+                  </div>
+                  <!--div class="overlay-icon">
+                    <i class="fa fa-play-circle-o"></i>
+                  </div-->
+                </a>
+                <p>Medicare.</p>
+                <h2>Get copay as low as <b>$1</b> on select plans.</h2>
+                <p><b><u><a href="under-con.html"><font color="808080">Learn More.</font></a></u></b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-widget">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="single-widget">
+              <h2>Service</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="under-con.html">Online Help</a></li>
+                <li><a href="under-con.html">Contact Us</a></li>
+                <li><a href="under-con.html">Order Status</a></li>
+                <li><a href="under-con.html">Change Location</a></li>
+                <li><a href="under-con.html">FAQ’s</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="single-widget">
+              <h2>UPMC pharmacy stores</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="under-con.html">Locate store</a></li>
+                <li><a href="under-con.html">Store Timing</a></li>
+                <li><a href="under-con.html">Money Services</a></li>
+                <li><a href="under-con.html">Regional Stores</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="single-widget">
+              <h2>Policies</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="under-con.html">Terms of Use</a></li>
+                <li><a href="under-con.html">Privacy Policy</a></li>
+                <li><a href="under-con.html">Refund Policy</a></li>
+                <li><a href="under-con.html">Billing System</a></li>
+                <li><a href="under-con.html">Ticket System</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="single-widget">
+              <h2>About UPMC</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="under-con.html">Company Information</a></li>
+                <li><a href="under-con.html">Careers</a></li>
+                <li><a href="under-con.html">Store Location</a></li>
+                <li><a href="under-con.html">Affillate Program</a></li>
+                <li><a href="under-con.html">Copyright</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+    
+    <!--div class="footer-bottom">
+      <div class="container">
+        
+      </div>
+    </div-->
+    <div id="footer">
+  <div class="container">
+    <p class="text-muted credit">Copyright 2016.UPMC Health Plan, Inc. <a href=under-con.html>Team 7</a>.</p>
+  </div>
+  </footer><!--/Footer-->
+  
+<script src="js/jquery.js"></script>
+  <script src="js/price-range.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main1.js"></script>
+  
+      <script src="./javascript/jquery-1.11.3.min.js"></script>
+    <script src="./javascript/bootstrap.min.js"></script>
+    
+      </body>
+      </html>
+      
